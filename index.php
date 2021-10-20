@@ -1,6 +1,8 @@
 <?php
     require './db/db.php';
 
+    header("Access-Control-Allow-Origin: *");
+
     $routes = array(
         '/',
         '/users',
