@@ -1,6 +1,7 @@
 <?php
     require './db/connection.php';
     require './model/user.php';
+    require './model/book.php';
 
     header("Access-Control-Allow-Origin: *");
 
