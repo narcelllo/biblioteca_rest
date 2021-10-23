@@ -27,28 +27,26 @@
     }
 
     function router($routes, $conn) {
-        foreach ($routes as $path) {
-            if (isset($_SERVER['PATH_INFO'])) {
-                $endpoint = $_SERVER['PATH_INFO'];
-            } else {
-                $endpoint = '/';
-            }
+        if (isset($_SERVER['PATH_INFO'])) {
+            $endpoint = $_SERVER['PATH_INFO'];
+        } else {
+            $endpoint = '/';
+        }
 
-            if ($path == $endpoint) {
-                $method = $_SERVER['REQUEST_METHOD'];
-                $model = instance_model($path, $conn);
+        if (in_array($endpoint, $routes)) {
+            $method = $_SERVER['REQUEST_METHOD'];
+            $model = instance_model($endpoint, $conn);
 
-                switch ($method) {
-                    case 'GET':
-                        $model->read();
-                        break;
-                    case 'POST':
-                        $model->create();
-                        break;
-                }
-                
-                return;
+            switch ($method) {
+                case 'GET':
+                    $model->read();
+                    break;
+                case 'POST':
+                    $model->create($_POST);
+                    break;
             }
+            
+            return;
         }
 
         mysqli_close($conn);
