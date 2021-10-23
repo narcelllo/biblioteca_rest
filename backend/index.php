@@ -1,6 +1,6 @@
 <?php
     require './db/connection.php';
-    require './db/db.php';
+    require './model/user.php';
 
     header("Access-Control-Allow-Origin: *");
 
@@ -9,6 +9,21 @@
         '/users',
         '/books'
     );
+
+    function instance_model($path, $conn) {
+        $model = null;    
+
+        switch($path) {
+            case '/users':
+                $model =  new User($conn);
+                break;
+            case '/books':
+                $model =  new Book($conn);
+                break;
+        }
+
+        return $model;
+    }
 
     function router($routes, $conn) {
         foreach ($routes as $path) {
@@ -19,16 +34,15 @@
             }
 
             if ($path == $endpoint) {
-                $db = new DB($path, $conn);
-
                 $method = $_SERVER['REQUEST_METHOD'];
+                $model = instance_model($path, $conn);
 
                 switch ($method) {
                     case 'GET':
-                        $db->search();
+                        $model->read();
                         break;
                     case 'POST':
-                        ;
+                        $model->create();
                         break;
                 }
                 
