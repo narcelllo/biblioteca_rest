@@ -23,8 +23,18 @@
             echo json_encode($items);
         }
 
-        function create() {
-            echo json_encode('ESTOU FUNCIONANDO');
+        function create($request) {
+            $result = mysqli_query(
+                $this->conn, 
+                "insert into users (name, birth_date, cpf, email) values (
+                    '{$request['name']}',
+                    '{$request['birth_date']}',
+                    '{$request['cpf']}',
+                    '{$request['email']}'
+                )"
+            );
+
+            echo json_encode($result);
         }
 
         function __destruct() {
