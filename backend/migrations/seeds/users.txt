@@ -1,0 +1,4 @@
+INSERT INTO users (name, birth_date, cpf, email) VALUES 
+("Luzia Analu Marcela Nascimento", "2000-06-14", "503.722.247-84", "luziaanalumarcelanascimento-83@stembalagens.com.br"),
+("Julio Ian Matheus Rocha", "1976-01-03", "906.018.280-46", "jjulioianmatheusrocha@andradecamara.com.br"),
+("Sabrina Rosângela da Luz", "1942-11-21", "569.845.506-61", "sabrinarosangeladaluz__sabrinarosangeladaluz@mailinator.com")

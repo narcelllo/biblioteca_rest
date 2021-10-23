@@ -1,0 +1,222 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2021-10-23T22:18:38.261Z",
+    "__export_source": "insomnia.desktop.app:v2021.5.3",
+    "resources": [
+        {
+            "_id": "req_bb2e0301c8ed4dfa8e8f9daef5a5507f",
+            "parentId": "fld_acfd17fafe3e4637a5153145d0ac717e",
+            "modified": 1634606046345,
+            "created": 1634606023823,
+            "url": "http://localhost:3333/books",
+            "name": "Books",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1634606023823,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_acfd17fafe3e4637a5153145d0ac717e",
+            "parentId": "wrk_23f47adc8f094b56b2e4aec06b72edec",
+            "modified": 1634605974147,
+            "created": 1634605974147,
+            "name": "biblioteca_rest",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1634605974147,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_23f47adc8f094b56b2e4aec06b72edec",
+            "parentId": null,
+            "modified": 1549891920540,
+            "created": 1549891920540,
+            "name": "Insomnia",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_c59e6af1d43d485dbea165de50101079",
+            "parentId": "fld_acfd17fafe3e4637a5153145d0ac717e",
+            "modified": 1635027393044,
+            "created": 1635027379276,
+            "url": "http://localhost:3333/books",
+            "name": "Books",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "multipart/form-data",
+                "params": [
+                    {
+                        "id": "pair_b005e52f571b4e13a44b10397d4bbf0b",
+                        "name": "name",
+                        "value": "Um novo jeito de trabalhar",
+                        "description": ""
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "multipart/form-data",
+                    "id": "pair_87535ad7b1be4e29994fe1cf2c54d8c5"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1634606004238,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_1046c309747f463b96fa7086d97495bf",
+            "parentId": "fld_acfd17fafe3e4637a5153145d0ac717e",
+            "modified": 1634606313886,
+            "created": 1634605984653,
+            "url": "http://localhost:3333/users",
+            "name": "Users",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [],
+            "authentication": {},
+            "metaSortKey": -1634605984653,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_7bd23f34f0734b3db0c6464c418c15d4",
+            "parentId": "fld_acfd17fafe3e4637a5153145d0ac717e",
+            "modified": 1635025181190,
+            "created": 1635022008717,
+            "url": "http://localhost:3333/users",
+            "name": "Users",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "multipart/form-data",
+                "params": [
+                    {
+                        "id": "pair_b55e4e213c6448178dac0a8b4cbd5f3c",
+                        "name": "name",
+                        "value": "Yago Isaac Gael de Paula",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_64aa28873d8644dab73e179b1f5df5bf",
+                        "name": "birth_date",
+                        "value": "1950-03-03",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_6b2c0a6cd0bf4028a5f312ead69cb095",
+                        "name": "cpf",
+                        "value": "039.413.596-22",
+                        "description": ""
+                    },
+                    {
+                        "id": "pair_d467a270b6624ed3b6bf176d662be6ad",
+                        "name": "email",
+                        "value": "yagoisaacgaeldepaula__yagoisaacgaeldepaula@scalioni.com.br",
+                        "description": ""
+                    }
+                ]
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "multipart/form-data",
+                    "id": "pair_0adf89e2e1e74e7e8b5b64644b9028ff"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1629764973537,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_45a8b0b092614ec38913fbb9ee5c3e80",
+            "parentId": "wrk_23f47adc8f094b56b2e4aec06b72edec",
+            "modified": 1608052243223,
+            "created": 1549891920574,
+            "name": "New Environment",
+            "data": {
+                "base_url": "localhost:3333/"
+            },
+            "dataPropertyOrder": {
+                "&": [
+                    "base_url"
+                ]
+            },
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1549891920574,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_2bc9ba79f1bf4bf7b28cfabe82ee18e6",
+            "parentId": "wrk_23f47adc8f094b56b2e4aec06b72edec",
+            "modified": 1625252714021,
+            "created": 1549891920580,
+            "name": "Default Jar",
+            "cookies": [
+                {
+                    "key": "_fullstack_developer_session",
+                    "value": "Xh1FdE13Orre52SLAn%2Bkm4r%2FFbjXxHriV%2BBtJEP%2FZf%2FSh%2BUgb%2BVL0%2B5ql86vjzhIXMqK7%2Fv8QLiq2L320w7tEy9Js2k2SLpuUvw%2B1KhZtnVZktByGjLpdmaAs6zDJ6NiJuSd56f%2FyhPbu6aCvO6a%2BqoaWX0mmbkFAyIxogBjtND%2FibyL3TRPmPZX7BvlLRqE3rd4ls6Ed4b7%2FjUj0msgGPWu0F9jvdnMhK4FH6qz98audqEEEYteX%2BVsC4xUaq%2BEUBGdv0RXnmUqamxiFHVKHu%2FbNh6D0eZhqn3ZuJRAsTHaRpXE--JpEn4eDslLN6GHAj--GMCe68wSgR12EubarKacRg%3D%3D",
+                    "domain": "localhost",
+                    "path": "/",
+                    "httpOnly": true,
+                    "hostOnly": true,
+                    "creation": "2021-07-02T19:04:04.275Z",
+                    "lastAccessed": "2021-07-02T19:05:14.021Z",
+                    "id": "437896083710386"
+                }
+            ],
+            "_type": "cookie_jar"
+        },
+        {
+            "_id": "spc_e4361d21d2944545ac647e924b911990",
+            "parentId": "wrk_23f47adc8f094b56b2e4aec06b72edec",
+            "modified": 1591202886438,
+            "created": 1591202886438,
+            "fileName": "Insomnia",
+            "contents": "",
+            "contentType": "yaml",
+            "_type": "api_spec"
+        }
+    ]
+}

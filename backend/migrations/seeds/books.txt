@@ -1,0 +1,4 @@
+INSERT INTO books (name, user_id) VALUES
+("O Guia do mochileiro das galaxias", 1),
+("O Homem mais rico da Babilônia", 2),
+("Pai rico pai pobre", 3)

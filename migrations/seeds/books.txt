@@ -1,4 +1,0 @@
-INSERT INTO books (id, name, user_id) VALUES
-(1, "O Guia do mochileiro das galaxias", 1),
-(2, "O Homem mais rico da Babilônia", 2),
-(3, "Pai rico pai pobre", 3)

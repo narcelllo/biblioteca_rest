@@ -1,0 +1,13 @@
+Table users {
+  id int [pk, increment]
+  name varchar
+  birth_date date
+  cpf varchar
+  email varchar
+}
+
+Table books {
+  id int [pk, increment]
+  name varchar
+  user_id int [ref: > users.id]
+}
