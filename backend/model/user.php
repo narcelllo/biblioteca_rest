@@ -23,7 +23,7 @@
             echo json_encode($items);
         }
 
-        function create($request) {
+        function create($request) {            
             $result = mysqli_query(
                 $this->conn, 
                 "insert into users (name, birth_date, cpf, email) values (
@@ -34,7 +34,12 @@
                 )"
             );
 
-            echo json_encode($result);
+            if ($result) {
+                echo json_encode(['status' => 200]);
+                return;
+            }
+
+            echo json_encode(['status' => 500]);
         }
 
         function __destruct() {
