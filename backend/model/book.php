@@ -21,8 +21,20 @@
             echo json_encode($items);
         }
 
-        function create() {
-            echo json_encode('ESTOU FUNCIONANDO');
+        function create($request) {            
+            $result = mysqli_query(
+                $this->conn, 
+                "insert into books (name) values (
+                    '{$request['name']}'
+                )"
+            );
+
+            if ($result) {
+                echo json_encode(['status' => 200]);
+                return;
+            }
+
+            echo json_encode(['status' => 500]);
         }
 
         function __destruct() {
