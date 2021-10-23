@@ -1,4 +1,5 @@
 <?php
+    require './db/connection.php';
     require './db/db.php';
 
     header("Access-Control-Allow-Origin: *");
@@ -18,7 +19,19 @@
             }
 
             if ($path == $endpoint) {
-                search($path, $conn);
+                $db = new DB($path, $conn);
+
+                $method = $_SERVER['REQUEST_METHOD'];
+
+                switch ($method) {
+                    case 'GET':
+                        $db->search();
+                        break;
+                    case 'POST':
+                        ;
+                        break;
+                }
+                
                 return;
             }
         }
