@@ -1,33 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+html {
+    background: linear-gradient(236.85deg, #041832 27.26%, #3468A7 96.03%);
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
+    color: #515159;
     font-family: 'Roboto', sans-serif;
 }
 
 header {
-    /* border: 0;
-    color: #ffffff;
-    background: #da1e26;
-    font-weight: bold;
+    color: #515159;
+    background: linear-gradient(236.85deg, #e6e6eb 27.26%, #3468A7 96.03%);
     padding: 15px 20px;
     font-size: 16px;
-    border-radius: 4px;
-    margin-top: 20px;
-    cursor: pointer;
-    transition: 0.3s; */
     display: flex;
-    justify-content: space-between;
-    padding-left: 32px;
-    padding-right: 32px;
-    
+    justify-content: space-between;    
 }
 
 .container {
-    background: #ECF4FF;
-    color: #1C1C1C;
-    margin: 64px;
-    border-radius: 20px;
-    box-shadow: 6px 6px 6px #0E1D2F;
+    color: #515159;
+    margin: 16px;
+    border-radius: 4px;
+    background: linear-gradient(236.85deg, #e6e6eb 27.26%, #3468A7 96.03%);
     padding: 64px;
 }
 
@@ -46,6 +42,10 @@ th, tr, td {
 }
 
 .footer {
+    color: #515159;
+    background: linear-gradient(236.85deg, #e6e6eb 27.26%, #3468A7 96.03%);
+    padding: 15px 20px;
+    font-size: 16px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center; 
 }
