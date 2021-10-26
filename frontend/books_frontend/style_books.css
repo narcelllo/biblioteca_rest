@@ -2,12 +2,12 @@
 
 html {
     background: linear-gradient(236.85deg, #041832 27.26%, #3468A7 96.03%);
-    font-family: 'Roboto', sans-serif;
 }
 
 body {
     color: #515159;
     font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
 
 header {
