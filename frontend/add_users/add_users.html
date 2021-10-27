@@ -13,7 +13,8 @@
         <a class="homef" href="../index.html">Inicio</a>
         <a class="usersf" href="../users_frontend/users.html">Usuário</a>
         <a class="booksf" href="../books_frontend/books.html">Livros</a>
-        <a class="booksf" href="./add_users.html">Criar Usuário</a>
+        <a class="booksf" href="./add_users.html">Cadastrar Usuário</a>
+        <a class="booksf" href="../add_books/add_books.html">Cadastrar Livro</a>
 
         <!-- <button onClick="Home()">Inicio</button>
             <button onClick="books()">Livros</button>
@@ -28,21 +29,21 @@
         <form class="containerForm" action="http://localhost:3333/users" method="post">
             <fieldset class="grup">
             <div class="field">
-                <label for="nome">Nome<br></label>
-                <input type="text" id="nome" required/>
+                <label for="name">Nome<br></label>
+                <input type="text" name="name" required/>
             </div>
             <div class="field">
                 <label for="email">Email<br></label>
-                <input type="email" id="email" required/>
+                <input type="email" name="email" required/>
             </div>
             <div class="field">
                 <label for="birth_date">Data de Nascimento<br></label>
-                <input type="date" id="data" required/>
+                <input type="date" name="birth_date" required/>
             </div>
             <div class="field">
                 <label for="cpf">CPF<br></label>
                 <!-- <input type="text" id="cpf" required/> -->
-                <input oninput="mascara(this)" type="text" id="cpf" required/>
+                <input oninput="mascara(this)" type="text" name="cpf" required/>
             </div>
             <br>
             <div class="button">
