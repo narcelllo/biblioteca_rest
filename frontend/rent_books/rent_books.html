@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style_add_books.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="style_rent_books.css" media="screen" />
     <meta charset="utf-8" />
     <title>Livraria</title>
 </head>
@@ -14,8 +14,8 @@
         <a class="usersf" href="../users_frontend/users.html">Usuário</a>
         <a class="booksf" href="../books_frontend/books.html">Livros</a>
         <a class="booksf" href="../add_users/add_users.html">Cadastrar Usuário</a>
-        <a class="booksf" href="./add_books.html">Cadastrar Livro</a>
-        <a class="booksf" href="../rent_books/rent_books.html">Alugar Livro</a>
+        <a class="booksf" href="../add_books/add_books.html">Cadastrar Livro</a>
+        <a class="booksf" href="./rent_books.html">Alugar Livro</a>
 
         <!-- <button onClick="Home()">Inicio</button>
             <button onClick="books()">Livros</button>
@@ -34,6 +34,11 @@
                     <input type="text" name="name" required />
                 </div>
                 <br>
+                <div class="field">
+                    <label for="name">ID do locador<br></label>
+                    <input type="text" name="user_id" required />
+                </div>
+                <br>
                 <div class="button">
                     <button type="submit">Cadastrar</button>
                 </div>
@@ -44,7 +49,7 @@
     <footer>
         <h2>Footer</h2>
     </footer>
-    <script src="script_add_books.js"></script>
+    <script src="script_rent_books.js"></script>
 </body>
 
 </html>

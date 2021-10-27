@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html {
+    background: linear-gradient(236.85deg, #041832 27.26%, #3468A7 96.03%);
+}
+
+body {
+    color: #515159;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+header {
+    color: #515159;
+    background: linear-gradient(236.85deg, #e6e6eb 27.26%, #3468A7 96.03%);
+    padding: 15px 20px;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;    
+}
+
+.container {
+    color: #515159;
+    margin: 16px;
+    border-radius: 4px;
+    background: linear-gradient(236.85deg, #e6e6eb 27.26%, #3468A7 96.03%);
+    padding: 64px;
+}
+
+.containerForm{
+    display: flex;
+    justify-content: center; 
+}
+
+fieldset {
+    border-radius: 4px;
+}
+.field input[type="text"], .field input[type="email"], input[type="date"] {
+    padding: 0.2em;
+    border: 1px solid #515159;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+.button button {
+    padding: 4px;
+    border: 1px solid #515159;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    color: #515159;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+footer {
+    color: #515159;
+    background: linear-gradient(236.85deg, #e6e6eb 27.26%, #3468A7 96.03%);
+    padding: 15px 20px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center; 
+}
