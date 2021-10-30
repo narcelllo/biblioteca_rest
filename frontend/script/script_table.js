@@ -3,6 +3,7 @@ let users = {};
 let books = {};
 
 function initTable(type) {
+    console.log(type)
     switch (type) {
         case 'books':
             fetch('http://localhost:3333/books')
@@ -25,14 +26,13 @@ function initTable(type) {
                 });
             break;
 
-        case 'user':
+        case 'users':
             fetch('http://localhost:3333/users')
                 .then(function (response) {
                     return response.json();
                 })
                 .then(usersCollection => {
                     users = usersCollection;
-                    usersf(users);
 
                     let elUsers = ""
 
@@ -47,8 +47,8 @@ function initTable(type) {
                     var tableUsers = document.getElementById("table_users");
                     tableUsers.innerHTML = elUsers;
 
-                    break;
                 });
+            break;
     }
 }
 
