@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" type="text/css" href="style_users.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../style/style.css" media="screen" />
     <meta charset="utf-8" />
     <title>Livraria</title>
 </head>
@@ -10,17 +10,11 @@
 <body>
 
     <header>
-        <a class="homef" href="../index_frontend/index.html">Inicio</a>
-        <a class="usersf" href="../users_frontend/users.html">Usuário</a>
+        <a class="homef" href="../index.html">Inicio</a>
+        <a class="usersf" href="./users.html">Usuário</a>
         <a class="booksf" href="../books_frontend/books.html">Livros</a>
+        <a class="booksf" href="../rent_books/rent_books.html">Alugar Livro</a>
 
-        <!-- <button onClick="Home()">Inicio</button>
-            <button onClick="books()">Livros</button>
-            <button onClick="users()">Usuários</button> -->
-
-        <!-- <a href="./index.html">Inicio</a>
-        <a href="#" onclick="usersf()">Usuário</a>
-        <a href="#" onclick="booksf()">Livros</a> -->
     </header>
 
     <div class="container">
@@ -32,11 +26,18 @@
 
             </tbody>
         </table>
+
+        <button>
+            <a class="booksf" href="../add_users/add_users.html">Cadastrar Usuário</a>
+        </button>
     </div>
     <footer class="footer">
         <h2>Footer</h2>
     </footer>
-    <script src="script_users.js"></script>
+    <script src="../script/script_table.js"></script>
+    <script>
+        initTable('users');
+    </script>
 </body>
 
 </html>
