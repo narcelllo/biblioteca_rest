@@ -16,9 +16,7 @@ function initTable(type) {
                     let elBooks = ""
 
                     books.forEach(el => {
-                        elBooks += "<tr><td>" + el.id + "</td>"
                         elBooks += "<td>" + el.name + "</td>"
-                        elBooks += "<td>" + el.user_id + "</td>"
                         elBooks += "</tr>"
                     });
                     var tableBooks = document.getElementById("table_books");
@@ -37,7 +35,6 @@ function initTable(type) {
                     let elUsers = ""
 
                     users.forEach(el => {
-                        elUsers += "<tr><td>" + el.id + "</td>"
                         elUsers += "<td>" + el.name + "</td>"
                         elUsers += "<td>" + el.birth_date + "</td>"
                         elUsers += "<td>" + el.cpf + "</td>"
