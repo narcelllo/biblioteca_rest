@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../style/style.css" media="screen" />
+    <meta charset="utf-8" />
+    <title>Livraria</title>
+</head>
+
+<body>
+
+    <header>
+        <a class="homef" href="../index.html">Inicio</a>
+        <a class="usersf" href="../users_frontend/users.html">Usuário</a>
+        <a class="booksf" href="../books_frontend/books.html">Livros</a>
+        <a class="booksf" href="./rent_books.html">Alugar Livro</a>
+
+        <!-- <button onClick="Home()">Inicio</button>
+            <button onClick="books()">Livros</button>
+            <button onClick="users()">Usuários</button> -->
+
+        <!-- <a href="./index.html">Inicio</a>
+        <a href="#" onclick="usersf()">Usuário</a>
+        <a href="#" onclick="booksf()">Livros</a> -->
+    </header>
+
+    <div class="container">
+        <form class="containerForm" action="http://localhost:3333/books" method="post">
+            <fieldset class="grup">
+                <div class="field">
+                    <label for="name">Nome do Livro<br></label>
+                    <input type="text" name="name" required />
+                </div>
+                <div class="field">
+                    <label for="isbn">ISBN do Livro<br></label>
+                    <input type="text" name="" required />
+                </div>
+                <div class="field">
+                    <label for="name">CPF do locador<br></label>
+                    <input type="text" name="user_id" required />
+                </div>
+                <br>
+                <div class="button">
+                    <button type="submit">Cadastrar</button>
+                </div>
+            </fieldset>
+        </form>
+
+    </div>
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+    <script src="script_rent_books.js"></script>
+</body>
+
+</html>
