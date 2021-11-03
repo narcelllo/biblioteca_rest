@@ -41,6 +41,15 @@ fieldset {
     border-radius: 4px;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
 }
+table td {
+   border: solid;
+   border-radius: 4px;
+   padding: 8px;
+}
+
+table thead {
+    font-weight: 800;
+}
 
 .button {
     display: flex;
