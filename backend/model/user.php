@@ -12,7 +12,7 @@
             $this->conn = $conn;
         }
 
-        function read() {
+        function index() {
             $items = [];
             $result = mysqli_query($this->conn, "select * from users");
 
@@ -54,6 +54,10 @@
             }
 
             echo json_encode(['status' => 500]);
+        }
+
+        function show($user_id){
+            echo 'show';
         }
 
         function __destruct() {

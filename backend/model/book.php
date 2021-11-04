@@ -10,7 +10,7 @@
             $this->conn = $conn;
         }
 
-        function read() {
+        function index() {
             $items = [];
             $result = mysqli_query($this->conn, "select * from books");
 
