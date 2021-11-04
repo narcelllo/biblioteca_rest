@@ -12,7 +12,7 @@
             $this->conn = $conn;
         }
 
-        function read() {
+        function index() {
             $items = [];
             $result = mysqli_query($this->conn, "select * from users");
 
@@ -36,6 +36,39 @@
 
             if ($result) {
                 echo json_encode(['status' => 200]);
+                return;
+            }
+
+            echo json_encode(['status' => 500]);
+        }
+
+        function delete($user_id) {
+            $result = mysqli_query(
+                $this->conn, 
+                "delete from users where id = $user_id"
+            );
+
+            if ($result) {
+                echo json_encode(['status' => 200]);
+                return;
+            }
+
+            echo json_encode(['status' => 500]);
+        }
+
+        function show($user_id){
+            $result = mysqli_query(
+                $this->conn, 
+                "select * from users where id = $user_id"
+            );
+
+            $items = [];
+            while ($row = mysqli_fetch_assoc($result)) {
+                array_push($items, $row);
+            }
+
+            if ($result) {
+                echo json_encode($items[0]);
                 return;
             }
 
