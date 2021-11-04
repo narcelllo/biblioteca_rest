@@ -3,7 +3,6 @@ let users = {};
 let books = {};
 
 function initTable(type) {
-    console.log(type)
     switch (type) {
         case 'books':
             fetch('http://localhost:3333/books')
