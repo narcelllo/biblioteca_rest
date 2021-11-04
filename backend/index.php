@@ -39,7 +39,11 @@
 
             switch ($method) {
                 case 'GET':
-                    $model->read();
+                    if (isset($endpoint[2])) {
+                        $model->show($endpoint[2]);
+                        break;
+                    }
+                    $model->index();
                     break;
                 case 'POST':
                     $model->create($_POST);
