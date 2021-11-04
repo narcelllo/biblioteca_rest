@@ -42,6 +42,20 @@
             echo json_encode(['status' => 500]);
         }
 
+        function delete($user_id) {
+            $result = mysqli_query(
+                $this->conn, 
+                "delete from users where id = $user_id"
+            );
+
+            if ($result) {
+                echo json_encode(['status' => 200]);
+                return;
+            }
+
+            echo json_encode(['status' => 500]);
+        }
+
         function __destruct() {
             mysqli_close($this->conn);
         }
