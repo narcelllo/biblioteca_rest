@@ -37,6 +37,20 @@
             echo json_encode(['status' => 500]);
         }
 
+        function delete($book_id) {
+            $result = mysqli_query(
+                $this->conn, 
+                "delete from books where id = $book_id"
+            );
+
+            if ($result) {
+                echo json_encode(['status' => 200]);
+                return;
+            }
+
+            echo json_encode(['status' => 500]);
+        }
+
         function __destruct() {
             mysqli_close($this->conn);
         }
