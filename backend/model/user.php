@@ -57,7 +57,22 @@
         }
 
         function show($user_id){
-            echo 'show';
+            $result = mysqli_query(
+                $this->conn, 
+                "select * from users where id = $user_id"
+            );
+
+            $items = [];
+            while ($row = mysqli_fetch_assoc($result)) {
+                array_push($items, $row);
+            }
+
+            if ($result) {
+                echo json_encode($items[0]);
+                return;
+            }
+
+            echo json_encode(['status' => 500]);
         }
 
         function __destruct() {
